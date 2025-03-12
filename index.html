@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Cao Đức Huy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #0073e6;
+            object-fit: cover;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #0073e6;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .projects-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cao Đức Huy</h1>
+            <p>Sinh viên năm 4 ngành Phát triển Phần mềm | Lập trình viên tương lai</p>
+        </div>
+    </header>
+    
+    <section id="profile" class="section">
+        <div class="container">
+            <h2>Hồ sơ cá nhân</h2>
+            <img src="huy.jpg" alt="Cao Đức Huy" class="profile-image">
+            <p><strong>Họ và tên:</strong> Cao Đức Huy</p>
+            <p><strong>Lớp:</strong> 21DTHB4</p>
+            <p><strong>Ngày sinh:</strong> 04/08/2003</p>
+            <p><strong>Email:</strong> huydeveloper@example.com</p>
+            <p><strong>Số điện thoại:</strong> +84 123 456 789</p>
+            <p><strong>Địa chỉ:</strong> Việt Nam</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>Java (NetBeans, Spring Boot)</li>
+                <li>Phát triển Web (HTML, CSS, JavaScript)</li>
+                <li>Quản lý Cơ sở Dữ liệu (MySQL, Firebase)</li>
+                <li>Quản lý phiên bản (Git, GitHub)</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Kinh nghiệm làm việc</h2>
+            <p><strong>Thực tập sinh - Phát triển phần mềm</strong> (2024 - Hiện tại)</p>
+            <p>Phát triển và bảo trì ứng dụng web, tối ưu hóa hệ thống đặt hàng.</p>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Dự án</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="wingtea.jpg" alt="Dự án Wingtea" class="project-image">
+                    <p><strong>Wingtea</strong> - Ứng dụng đặt đồ ăn và thức uống.</p>
+                </div>
+                <div class="project-item">
+                    <img src="expense.jpg" alt="Quản lý chi tiêu" class="project-image">
+                    <p><strong>Quản lý chi tiêu</strong> - Công cụ tài chính giúp theo dõi chi tiêu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Liên hệ</h2>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cao Đức Huy. Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>
